@@ -16,4 +16,10 @@ public class StringCalculatorTest {
       StringCalculator calc = new StringCalculator();
       assertEquals(1, calc.Add("1"));
     }
+
+    @Test
+    public void TestTwoNumber(){
+      StringCalculator calc =  new StringCalculator();
+      assertEquals(12, calc.Add("10,2"));
+    }
 }
