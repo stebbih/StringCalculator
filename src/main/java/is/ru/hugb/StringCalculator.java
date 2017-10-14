@@ -9,6 +9,8 @@ public class StringCalculator {
 
   public static int Add(String text){
     int sum = 0;
+
+    text = text.replace("\n", ",");
     if (text == "") {
       return 0;
     }

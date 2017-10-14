@@ -28,4 +28,10 @@ public class StringCalculatorTest {
         StringCalculator calc = new StringCalculator();
         assertEquals(20, calc.Add("2,2,2,2,2,2,2,2,2,2"));
     }
+
+    @Test
+    public void TestNewLine() {
+      StringCalculator calc = new StringCalculator();
+      assertEquals(3, calc.Add("1\n2"));
+    }
 }
