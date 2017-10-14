@@ -9,6 +9,9 @@ public class StringCalculator {
 
   public static int Add(String text){
     int sum = 0;
+    boolean hasMinus = false;
+    int singleNumber = 0;
+    String returnMinus = "";
 
     text = text.replace("\n", ",");
     if (text == "") {
@@ -17,11 +20,25 @@ public class StringCalculator {
     if (text.contains(",")) {
       String[] splitText = text.split(",");
       for (String n : splitText) {
-          sum += toInt(n);
+          singleNumber = toInt(n);
+          if (singleNumber < 0) {
+              hasMinus = true;
+              returnMinus = n;
+          }
+          else {
+            sum += singleNumber;
+          }
       }
     }
     else {
       sum = toInt(text);
+      if (sum < 0) {
+        throw new IllegalArgumentException("Negative not allowed " + sum);
+      }
+    }
+
+    if (hasMinus) {
+      throw new IllegalArgumentException("Negative not allowed " + singleNumber);
     }
 
     return sum;

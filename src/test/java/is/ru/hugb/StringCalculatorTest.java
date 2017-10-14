@@ -34,4 +34,15 @@ public class StringCalculatorTest {
       StringCalculator calc = new StringCalculator();
       assertEquals(3, calc.Add("1\n2"));
     }
+
+    @Test
+    public void TestMinusSingleNumber(){
+      StringCalculator calc = new StringCalculator();
+      try {
+          calc.Add("-1");
+      }
+      catch (IllegalArgumentException exception) {
+          assertEquals("Negative not allowed -1", exception.getMessage());
+      }
+    }
 }
