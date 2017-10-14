@@ -8,7 +8,7 @@ public class StringCalculator {
     if (text == "") {
       return 0;
     }
-
+    sum = Integer.parseInt(text);
     return sum;
   }
 
