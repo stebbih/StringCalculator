@@ -23,7 +23,7 @@ public class StringCalculator {
           singleNumber = toInt(n);
           if (singleNumber < 0) {
               hasMinus = true;
-              returnMinus = n;
+              returnMinus += n + ",";
           }
           else {
             sum += singleNumber;
@@ -38,7 +38,8 @@ public class StringCalculator {
     }
 
     if (hasMinus) {
-      throw new IllegalArgumentException("Negative not allowed " + singleNumber);
+      String newReturnMinus = returnMinus.substring(0, returnMinus.length() - 1);
+      throw new IllegalArgumentException("Negative not allowed " + newReturnMinus);
     }
 
     return sum;
