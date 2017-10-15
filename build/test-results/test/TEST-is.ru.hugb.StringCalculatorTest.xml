@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="is.ru.hugb.StringCalculatorTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2017-10-15T14:55:45" hostname="MacBook" time="0.007">
+<testsuite name="is.ru.hugb.StringCalculatorTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2017-10-15T15:12:53" hostname="MacBook" time="0.006">
   <properties/>
-  <testcase name="TestMinusUnknownNumber" classname="is.ru.hugb.StringCalculatorTest" time="0.003"/>
+  <testcase name="TestMinusUnknownNumber" classname="is.ru.hugb.StringCalculatorTest" time="0.002"/>
   <testcase name="TestMinusTwoNumber" classname="is.ru.hugb.StringCalculatorTest" time="0.0"/>
   <testcase name="TestOneNumber" classname="is.ru.hugb.StringCalculatorTest" time="0.0"/>
   <testcase name="TestNewLine" classname="is.ru.hugb.StringCalculatorTest" time="0.001"/>
-  <testcase name="TestMinusSingleNumber" classname="is.ru.hugb.StringCalculatorTest" time="0.0"/>
+  <testcase name="TestForNumberHigherThan1000" classname="is.ru.hugb.StringCalculatorTest" time="0.0"/>
+  <testcase name="TestMinusSingleNumber" classname="is.ru.hugb.StringCalculatorTest" time="0.001"/>
   <testcase name="TestEmptyStringPass" classname="is.ru.hugb.StringCalculatorTest" time="0.0"/>
-  <testcase name="TestTwoNumber" classname="is.ru.hugb.StringCalculatorTest" time="0.001"/>
+  <testcase name="TestTwoNumber" classname="is.ru.hugb.StringCalculatorTest" time="0.0"/>
   <testcase name="TestUnknownNumbers" classname="is.ru.hugb.StringCalculatorTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

@@ -67,4 +67,10 @@ public class StringCalculatorTest {
           assertEquals("Negative not allowed -1,-3,-4", exception.getMessage());
       }
     }
+
+    @Test
+    public void TestForNumberHigherThan1000() {
+      StringCalculator calc = new StringCalculator();
+      assertEquals(1001, calc.Add("1001,2,999,1000"));
+    }
 }

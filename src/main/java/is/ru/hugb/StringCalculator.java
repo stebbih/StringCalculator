@@ -7,6 +7,8 @@ public class StringCalculator {
         return Integer.parseInt(text);
   }
 
+
+
   public static int Add(String text){
     int sum = 0;
     boolean hasMinus = false;
@@ -25,9 +27,10 @@ public class StringCalculator {
               hasMinus = true;
               returnMinus += n + ",";
           }
-          else {
-            sum += singleNumber;
+          if (singleNumber >= 1000) {
+                continue;
           }
+          sum += singleNumber;
       }
     }
     else {
