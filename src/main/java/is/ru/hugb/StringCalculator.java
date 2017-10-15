@@ -15,10 +15,17 @@ public class StringCalculator {
     int singleNumber = 0;
     String returnMinus = "";
 
-    text = text.replace("\n", ",");
+
+    if (text.startsWith("//")) {
+        text = text.replace(";" , ",");
+        text = text.replace("//" , "0");
+        text = text.replace("\n" , "0,");
+    }
     if (text == "") {
       return 0;
     }
+
+    text = text.replace("\n", ",");
     if (text.contains(",")) {
       String[] splitText = text.split(",");
       for (String n : splitText) {

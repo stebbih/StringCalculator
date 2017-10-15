@@ -73,4 +73,10 @@ public class StringCalculatorTest {
       StringCalculator calc = new StringCalculator();
       assertEquals(1001, calc.Add("1001,2,999,1000"));
     }
+
+    @Test
+    public void TestForDelimiterChange() {
+      StringCalculator calc = new StringCalculator();
+      assertEquals(3, calc.Add("//;\n1;2"));
+    }
 }
