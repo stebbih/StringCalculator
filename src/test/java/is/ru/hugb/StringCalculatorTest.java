@@ -56,4 +56,15 @@ public class StringCalculatorTest {
           assertEquals("Negative not allowed -1", exception.getMessage());
       }
     }
+
+    @Test
+    public void TestMinusUnknownNumber(){
+      StringCalculator calc = new StringCalculator();
+      try {
+          calc.Add("-1,2,-3,1,-4");
+      }
+      catch (IllegalArgumentException exception) {
+          assertEquals("Negative not allowed -1,-3,-4", exception.getMessage());
+      }
+    }
 }
