@@ -7,7 +7,12 @@ public class StringCalculator {
         return Integer.parseInt(text);
   }
 
-
+  public static String SwitchTo(String text){
+    text = text.replace(";" , ",");
+    text = text.replace("//" , "0");
+    text = text.replace("\n" , "0,");
+    return text;
+  }
 
   public static int Add(String text){
     int sum = 0;
@@ -17,9 +22,7 @@ public class StringCalculator {
 
 
     if (text.startsWith("//")) {
-        text = text.replace(";" , ",");
-        text = text.replace("//" , "0");
-        text = text.replace("\n" , "0,");
+        text = SwitchTo(text);
     }
     if (text == "") {
       return 0;
